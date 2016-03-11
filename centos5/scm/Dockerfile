@@ -7,7 +7,7 @@ RUN yum -y update \
     bzr.x86_64 \
     git.x86_64 \
     mercurial.x86_64 \
-    openssh-client.x86_64 \
+    openssh-clients.x86_64 \
     subversion.x86_64 \
     procps.x86_64 \
  && find /usr/lib/locale/ -mindepth 1 -maxdepth 1 -type d -not -path '*en_US*' -exec rm -rf {} \; \
