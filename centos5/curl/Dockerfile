@@ -2,7 +2,6 @@ FROM centos:5
 
 RUN yum -y update \
  && yum -y install \
-    ca-certificates \
     curl.x86_64 \
     wget.x86_64 \
  && find /usr/lib/locale/ -mindepth 1 -maxdepth 1 -type d -not -path '*en_US*' -exec rm -rf {} \; \
