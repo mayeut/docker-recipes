@@ -1,5 +1,7 @@
 FROM mayeut/centos-buildpacks:centos5-curl
 
+ADD mercurial.selenic.com.repo /etc/yum.repos.d/
+
 # procps is very common in build systems, and is a reasonably small package
 RUN yum -y update \
  && yum -y install epel-release.noarch \
